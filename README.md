@@ -5,7 +5,7 @@
 然后，订单就异步交给的消息队列来做，然后再写数据库。
 
 主要流程如下
-![mark](https://github.com/YJYandHCX/Seckill/blob/master/Pic/Jiagou.png "mark")
+![mark](https://github.com/YJYandHCX/Go_seckill/blob/master/PIC/Jiagou.png "mark")
 
 # ApacheBench 压测结果
 ## 腾讯云服务器的硬件状况
@@ -17,7 +17,7 @@
 ab -c 100 -n 1000 http://81.68.103.64:3005/
 ```
 ## 压测结果
-![markdown](https://github.com/YJYandHCX/Seckill/blob/master/Pic/Result.png "markdown")
+![markdown](https://github.com/YJYandHCX/Go_seckill/blob/master/PIC/Result.png "markdown")
 
 ## 结果分析
 QPS 只有20左右，可能还是机器是单核，却要运行好几个服务器，Kalfka，Redis等几个进程造成的。
